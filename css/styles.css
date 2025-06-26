@@ -1,0 +1,62 @@
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/read-together.css");
+@import url("sections/not-average.css");
+@import url("sections/reading-journey.css");
+@import url("sections/membership.css");
+@import url("sections/feedback.css");
+@import url("sections/footer.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --inter: "Inter", sans-serif;
+  --martian-mono: "Martian Mono", monospace;
+  --main-color: #030e1a;
+  --secondary-color: #b21500;
+  --grey-color: #343434;
+  --color-white: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+body {
+ background-color: var(--bcg-color);
+ background-image: url("/assets/pattern-light-bg.svg");
+ background-blend-mode: multiply;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 5px 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 5px 25px;
+  }
+}

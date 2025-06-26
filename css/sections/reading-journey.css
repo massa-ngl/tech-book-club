@@ -1,0 +1,134 @@
+.reading-journey {
+  background: var(--color-white);
+  padding: 8rem 0;
+}
+
+.reading-journey__sec {
+  /* border: 2px solid royalblue; */
+  /* padding: 4rem 0 6rem 0; */
+  background-image: url("/assets/pattern-light-bg.svg");
+  background-color: #cdcdcd3f;
+  background-blend-mode: multiply;
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  padding: 0 2rem;
+}
+
+.reading-journey__title-h2 {
+  text-align: center;
+  font-family: var(--martian-mono);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-top: 4rem;
+}
+
+.reading-journey__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 4rem 0 8rem 0;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 4rem;
+  /* max-height: 1200px; */
+}
+
+.reading-journey__content-box {
+  /* border: 2px solid royalblue; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  font-family: var(--inter);
+  font-size: 1.1rem;
+  font-weight: 800;
+  width: 350px;
+}
+
+.content__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  padding: 8px 15px;
+  border-radius: 8px;
+  max-width: fit-content;
+}
+
+.reading-journey__arrow {
+  width: 150%;
+  position: relative;
+  z-index: 1;
+  left: -80%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .reading-journey {
+    padding: 4rem 0;
+  }
+
+  .reading-journey__sec {
+    z-index: 2;
+    width: 92%;
+    border-radius: 12px;
+  }
+
+  .reading-journey__content {
+    padding: 0;
+  }
+
+  .reading-journey__title-h2 {
+    text-align: left;
+    padding: 2rem 0 0 0;
+  }
+
+  .reading-journey__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .reading-journey__arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reading-journey {
+    padding: 2.5rem 1.5rem;  
+  }
+
+  .reading-journey__sec {
+    border-radius: 12px;
+  }
+
+  .reading-journey__content {
+    padding: 0;
+  }
+
+  .reading-journey__title-h2 {
+    text-align: left;
+    padding: 2rem 0 0 0;
+  }
+
+  .content__para {
+    text-wrap: wrap;
+  }
+
+  .reading-journey__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .reading-journey__arrow {
+    display: none;
+  }
+}

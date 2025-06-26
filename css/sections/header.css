@@ -1,0 +1,26 @@
+.header {
+  background-color: #cdcdcd3f;
+  background-blend-mode: multiply;
+}
+
+.header__sec {
+  display: block;
+  width: 100%;
+  padding: 25px 0 50px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header__sec {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__sec {
+    width: 100%;
+  }
+
+  .header__sec img {
+    width: 50%;
+  }
+}

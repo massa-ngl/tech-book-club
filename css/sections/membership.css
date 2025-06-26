@@ -1,0 +1,143 @@
+.membership {
+  margin-top: -10rem;
+  background: var(--color-white);
+}
+
+.membership__sec {
+  width: 100%;
+  background: var(--color-white);
+}
+
+.membership__sec-title {
+  text-align: center;
+  background: var(--color-white);
+  border: 2px solid transparent;
+}
+
+.membership__sec-title h2 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  font-family: var(--martian-mono);
+  margin-top: 4rem;
+}
+
+.membership__sec-content {
+  width: 80%;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.membership__sec-content__box {
+  border: 2px solid var(--grey-color);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  --webkit-transition: all 0.5s ease-in-out;
+  --moz-transition: all 0.5s ease-in-out;
+}
+
+.membership__sec-content__box:hover {
+  background: #ffeaedae;
+  transform: scale(1.05);
+}
+
+.membership-content__top {
+  font-family: var(--martian-mono);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -2.5rem;
+}
+
+.membership-content__cost {
+  color: #9d9d9d;
+  font-family: var(--inter);
+}
+
+.span-cost {
+  color: var(--main-color);
+  font-family: var(--martian-mono);
+}
+
+.membership-content__line {
+  display: grid;
+  margin: 0 auto;
+}
+
+
+.membership-content__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 1.5rem;
+}
+
+.membership__bottom-option {
+  display: flex;
+  gap: 12px;
+}
+
+.membership__bottom-option p {
+  color: #5d5d5de8;
+  font-family: var(--inter);
+  font-weight: 600;
+}
+
+.membership-content__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  border: 2px solid var(--main-color);
+  outline: none;
+  font-family: var(--martian-mono);
+  font-weight: 600;
+  color: var(--main-color);
+  background-color: #ffeaedae;
+  padding: 12px 18px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .membership {  
+    margin-top: -4rem;
+  }
+
+  .membership__sec-content {
+    width: 100%;
+  }
+
+  .membership__sec-title {
+    text-align: left;
+  }
+
+  .membership__sec-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .membership {
+    margin-top: -1rem;
+  }
+
+  .membership__sec-content {
+    width: 100%;
+  }
+
+  .membership__sec-title {
+    text-align: left;
+  }
+
+  .membership__sec-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 4rem 0;
+  }
+}

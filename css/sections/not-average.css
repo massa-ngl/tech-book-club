@@ -1,0 +1,135 @@
+.not-average {
+  background: var(--color-white);
+  position: relative;
+}
+
+.not-average__sec {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-top: 5rem;
+}
+
+.not-average__image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.not-average__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 1rem;
+  flex: 65%;
+}
+
+.not-average__text-title {
+  display: flex;
+  position: relative;
+}
+
+.not-average__text-title h1 {
+  width: 100%;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: var(--martian-mono);
+  color: var(--main-color);
+  line-height: 1.2;
+}
+
+.not-average__text-title img {
+  width: 20%;
+  height: 30%;
+  position: absolute;
+  z-index: 1;
+  left: 30%;
+  top: 70%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+}
+
+.not-average__text-para {
+  text-wrap: wrap;
+  width: 90%;
+  font-family: var(--inter);
+  color: var(--grey-color);
+  font-weight: 400;
+  margin-top: 1.2rem;
+  line-height: 1.4;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.not-average-tech-logo {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  right: 50.5%;
+  transform: translate(50%, -50%);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .not-average__sec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .not-average__text-title img {
+    width: 12%;
+    height: 30%;
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: 70%;
+    transform: translate(-50%, -50%) rotate(-2deg);
+  }
+  
+  .not-average__text-para {
+    width: 100%;
+  }
+
+  .not-average-tech-logo {
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    top: 84%;
+    right: 18%;
+    transform: translate(50%, -50%);
+  }
+
+  .not-average__text {
+    padding: 2.5rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .not-average__sec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .not-average__text {
+    padding: 10px 0 0 0;
+  }
+
+  .not-average__text-title img {
+    width: 25%;
+    height: 30%;
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    top: 80%;
+    transform: translate(-50%, -50%) rotate(-2deg);
+  }
+
+  .not-average__text-para {
+    width: 100%;
+  }
+  
+  .not-average-tech-logo {
+    display: none;
+  }
+}

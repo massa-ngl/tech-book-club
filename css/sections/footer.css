@@ -1,0 +1,130 @@
+.footer {
+  border-radius: 16px 16px 0 0;
+  background-image: url("/assets/pattern-dark-bg.svg");
+  background-color: #01001f;
+  padding: 4rem 4rem 1rem 4rem;
+}
+
+.footer__sec {
+  width: 100%;
+  color: var(--color-white);
+}
+
+.footer__sec-heading {
+  text-align: center;
+  font-family: var(--martian-mono);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.footer__button {
+  background: transparent;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  border-color: var(--color-white);
+}
+
+.footer__text-btn {  display: flex;
+  justify-content: center;
+  max-width: fit-content;
+  gap: 5px;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: var(--martian-mono);
+  font-weight: 500;
+  padding: 10px 18px;
+  text-wrap: wrap;
+  text-transform: uppercase;
+  border: 2px solid var(--main-color);
+  outline: none;
+  border-radius: 8px;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  border-color: var(--color-white);
+}
+
+.footer__button p {
+  color: var(--color-white);
+}
+
+.footer__sec-avatar img {
+  width: 150px;
+}
+
+.footer__text-review {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.footer__review-right p {
+  font-family: var(--martian-mono);
+  font-size: 0.9rem;
+}
+
+.footer__sec-review-text {
+  font-family: var(--martian-mono);
+  font-size: 1rem;
+}
+
+.membership-content__line {
+  margin-top: 4rem;
+}
+
+.footer__sec-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+
+.footer__sec-bottom-left p {
+  font-family: var(--martian-mono);
+  font-size: 0.89rem;
+  color: var(--color-white);
+}
+
+.footer__sec-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__sec-bottom-right img {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    margin-top: 2rem;
+    padding: 1rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .footer {
+    padding: 1rem 0 0 0;
+  }
+
+  .footer__text-btn p {
+    font-size: 0.8rem;
+  }
+
+  .footer__text-review {
+    align-items: flex-start;
+  }
+
+  .footer__sec-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__sec-bottom-right {
+    gap: 10px;
+  }
+}
